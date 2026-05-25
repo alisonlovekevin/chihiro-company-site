@@ -331,6 +331,8 @@ const newsArticles = [
   }
 ];
 
+const newsByDateDesc = [...newsArticles].sort((a, b) => b.date.localeCompare(a.date));
+
 const pages = {
   '/business/': {
     title: '越境EC事業',
@@ -601,14 +603,14 @@ ${['Amazon', '日本郵政', 'FedEx', 'Orange Connex', '卸売サイト', '国�
 function companyPage() {
   return `${pageHero('会社ニュース', '越境貿易事業の歩み、成長に関するお知らせを掲載しています。')}
 <section class="section"><div class="wrap news-card-list">
-${newsArticles.map(newsCard).join('')}
+${newsByDateDesc.map(newsCard).join('')}
 </div></section>`;
 }
 
 function newsPage() {
   return `${pageHero('お知らせ', '最新のお知らせを掲載しています。')}
 <section class="section"><div class="wrap news-card-list">
-${newsArticles.map(newsCard).join('')}
+${newsByDateDesc.map(newsCard).join('')}
 </div></section>`;
 }
 
