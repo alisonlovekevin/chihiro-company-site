@@ -36,7 +36,7 @@ const productCategories = [
     description: 'フィギュア、キャラクターグッズ、コレクター向け商品を中心に取り扱います。',
     image: '/assets/products-hobby.png',
     products: [
-      { title: 'eBay Item 406922744667', url: 'https://www.ebay.com/itm/406922744667' },
+      { title: 'Sony REON POCKET Wearable Thermal Device', url: 'https://www.ebay.com/itm/406922744667', image: '/assets/ebay/hobby-406922744667.avif' },
       { title: 'Takara Tomy BEYBLADE X BX-46 Battle Entry Set', url: 'https://www.ebay.com/itm/406565290722', image: '/assets/ebay/hobby-406565290722.jpg' },
       { title: 'eBay Item 406532549986', url: 'https://www.ebay.com/itm/406532549986' },
       { title: 'eBay Item 406884972440', url: 'https://www.ebay.com/itm/406884972440' },
