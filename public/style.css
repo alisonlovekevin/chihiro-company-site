@@ -78,14 +78,16 @@ img {
 .brand-mark {
   width: 48px;
   height: 48px;
-  display: grid;
-  place-items: center;
-  color: #fff;
-  background: linear-gradient(135deg, var(--red), var(--red-dark));
-  border-radius: 6px;
-  font-weight: 800;
-  font-size: 24px;
+  display: block;
+  flex: 0 0 48px;
+  border-radius: 9px;
   box-shadow: 0 9px 20px rgba(169, 50, 50, .22);
+}
+
+.brand-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .brand strong {

@@ -417,7 +417,9 @@ function pageShell({ title, description, path, children }) {
 <title>${escapeHtml(fullTitle)}</title>
 <meta name="keywords" content="越境EC,日本正規品,厳選仕入れ,品質管理,検品,国際物流,海外発送,採用情報">
 <meta name="description" content="${escapeHtml(description)}">
-<link rel="stylesheet" href="/style.css?v=5">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/logo-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css?v=6">
 </head>
 <body>
 ${header(path)}
@@ -439,7 +441,7 @@ function header(path) {
   </div>
   <div class="wrap brand-row">
     <a class="brand" href="/" aria-label="${site.name}">
-    <span class="brand-mark">${site.mark}</span>
+    <span class="brand-mark"><img src="/assets/logo-mark.svg" alt=""></span>
     <span><strong>${site.name}</strong><small>${site.romanName}</small></span>
     </a>
     <p class="brand-copy">${site.tagline}</p>
@@ -458,7 +460,7 @@ function footer() {
   <div class="wrap footer-grid">
     <div>
       <a class="brand footer-brand" href="/">
-        <span class="brand-mark">${site.mark}</span>
+        <span class="brand-mark"><img src="/assets/logo-mark.svg" alt=""></span>
         <span><strong>${site.name}</strong><small>${site.tagline}</small></span>
       </a>
       <p>${site.lead}</p>
@@ -730,7 +732,7 @@ async function staticFile(pathname) {
   const safePath = normalize(decodeURIComponent(pathname)).replace(/^(\.\.[/\\])+/, '');
   const filePath = join(publicDir, safePath);
   const body = await readFile(filePath);
-  const types = { '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp' };
+  const types = { '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.svg': 'image/svg+xml; charset=utf-8', '.ico': 'image/x-icon' };
   return { body, type: types[extname(filePath)] || 'application/octet-stream' };
 }
 
@@ -791,7 +793,7 @@ const server = http.createServer(async (req, res) => {
   try {
     const url = new URL(req.url || '/', `http://${req.headers.host}`);
 
-    if (url.pathname === '/style.css' || url.pathname === '/style.css/' || url.pathname.startsWith('/assets/')) {
+    if (url.pathname === '/style.css' || url.pathname === '/style.css/' || url.pathname === '/favicon.ico' || url.pathname.startsWith('/assets/')) {
       const file = await staticFile(url.pathname === '/style.css/' ? '/style.css' : url.pathname);
       res.writeHead(200, { 'content-type': file.type, 'cache-control': 'public, max-age=3600' });
       res.end(file.body);

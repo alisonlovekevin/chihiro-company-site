@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="千尋貿易合同会社">
+  <defs>
+    <linearGradient id="seal" x1="18" y1="16" x2="110" y2="114" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c63b37"/>
+      <stop offset="1" stop-color="#7e1719"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="34" y1="24" x2="94" y2="104" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".25"/>
+      <stop offset=".6" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="108" height="108" rx="22" fill="url(#seal)"/>
+  <path d="M22 32c16-12 64-13 84 2" fill="none" stroke="url(#shine)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M36 39h56" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M64 29v66" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M42 66h44" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M31 91c20-12 45-13 66-2" fill="none" stroke="#f3c776" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="99" cy="89" r="5" fill="#f3c776"/>
+</svg>
