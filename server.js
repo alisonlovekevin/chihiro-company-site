@@ -26,7 +26,7 @@ const nav = [
   ['/quality/', '品質管理'],
   ['/logistics/', '国際物流'],
   ['/recruit/', '採用情報'],
-  ['/company/', '会社概要'],
+  ['/company/', '会社ニュース'],
   ['/contact/', 'お問い合わせ']
 ];
 
@@ -307,8 +307,8 @@ const pages = {
     body: partnersPage
   },
   '/company/': {
-    title: '会社概要',
-    description: `${site.name}の会社概要、所在地、事業内容、連絡先をご案内します。`,
+    title: '会社ニュース',
+    description: `${site.name}の会社ニュース、事業に関するお知らせ、採用情報を掲載しています。`,
     body: companyPage
   },
   '/news/': {
@@ -369,7 +369,7 @@ function header(path) {
   <div class="topbar">
     <div class="wrap topbar-inner">
       <span>${site.name}のウェブサイトをご覧いただき、ありがとうございます。</span>
-      <span><a href="/company/">会社概要</a><a href="/contact/">お問い合わせ</a></span>
+      <span><a href="/company/">会社ニュース</a><a href="/contact/">お問い合わせ</a></span>
     </div>
   </div>
   <div class="wrap brand-row">
@@ -548,14 +548,14 @@ ${['Amazon', '日本郵政', 'FedEx', 'Orange Connex', '卸売サイト', '国�
 }
 
 function companyPage() {
-  return `${pageHero('会社概要', '越境ECを通じて、日本品質の商品を世界へ届ける企業です。')}
-<section class="section"><div class="wrap company-table">
-${tableRow('会社名', site.name)}
-${tableRow('英語表記', site.romanName)}
-${tableRow('所在地', site.address)}
-${tableRow('電話番号', site.phone)}
-${tableRow('メール', site.email)}
-${tableRow('事業内容', '越境EC事業、日本商品の仕入れ、品質管理、在庫管理、国際物流対応')}
+  return `${pageHero('会社ニュース', '事業に関するお知らせ、採用情報、サイト更新情報を掲載しています。')}
+<section class="section"><div class="wrap news-list">
+${[
+  '取扱商品ページにeBay商品リンクと商品画像を追加しました。',
+  '越境EC事業の紹介ページを更新しました。',
+  '採用情報ページを公開しました。',
+  '公式ウェブサイトを公開しました。'
+].map((title, index) => `<article><time>2026.05.${25 - index}</time><a href="/company/">${title}</a></article>`).join('')}
 </div></section>`;
 }
 
@@ -578,6 +578,21 @@ function contactPage() {
   <p><strong>メール</strong><a href="mailto:${site.email}">${site.email}</a></p>
   <p><strong>住所</strong>${site.address}</p>
 </div>
+</div></section>
+<section class="band"><div class="wrap">
+  <div class="section-head">
+    <p class="eyebrow">Company Profile</p>
+    <h2>会社概要</h2>
+    <p>越境ECを通じて、日本品質の商品を世界へ届ける企業です。</p>
+  </div>
+  <div class="company-table">
+    ${tableRow('会社名', site.name)}
+    ${tableRow('英語表記', site.romanName)}
+    ${tableRow('所在地', site.address)}
+    ${tableRow('電話番号', site.phone)}
+    ${tableRow('メール', site.email)}
+    ${tableRow('事業内容', '越境EC事業、日本商品の仕入れ、品質管理、在庫管理、国際物流対応')}
+  </div>
 </div></section>`;
 }
 
