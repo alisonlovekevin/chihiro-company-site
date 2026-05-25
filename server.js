@@ -280,6 +280,57 @@ const jobs = [
   }
 ];
 
+const newsArticles = [
+  {
+    slug: 'cross-border-trade-launch-2025',
+    date: '2025.11.28',
+    title: '越境貿易事業を本格始動しました',
+    summary: `${site.name}は、日本国内で流通する正規品を海外のお客様へ届ける越境貿易事業を本格的に開始しました。`,
+    image: '/assets/news-trade-launch.png',
+    body: [
+      `${site.name}は、2025年11月より越境貿易事業を本格始動しました。日本国内で評価されている商品を、海外のお客様へ正確かつ丁寧に届けることを目的に、商品選定、仕入れ、検品、梱包、国際発送までを一貫して管理する運営体制を整えています。`,
+      '当社が大切にしているのは、単に商品を販売することではありません。海外のお客様が日本の商品に期待する品質、安心感、正確な情報を損なわないよう、仕入れ時の確認から発送前の状態確認まで、ひとつひとつの工程を標準化し、継続的に改善していくことを重視しています。',
+      '今後はホビー用品、玩具、プラモデル、CD・Blu-ray、生活雑貨など、海外需要の高い分野を中心に取扱商品を拡充し、販売チャネルの整備と物流品質の向上を進めてまいります。日本品質を、確かな流通で世界へ届ける企業として、誠実な事業運営に努めてまいります。'
+    ]
+  },
+  {
+    slug: 'sales-600k-2026',
+    date: '2026.02.28',
+    title: '月間売上60万円を突破しました',
+    summary: '越境EC事業の運営基盤強化と取扱商品の拡充により、月間売上が60万円を突破しました。',
+    image: '/assets/news-sales-600k.png',
+    body: [
+      `${site.name}は、2026年2月の月間売上が60万円を突破したことをお知らせいたします。事業開始後、商品登録、在庫管理、発送業務、顧客対応の各工程を見直しながら、安定した販売体制の構築に取り組んできた成果のひとつです。`,
+      '特に、海外のお客様から需要のある日本商品を継続的に調査し、商品ページの情報精度、写真品質、配送条件、問い合わせ対応を改善してきたことが、購入機会の増加につながりました。また、発送前の検品と梱包基準を明確にすることで、取引後の安心感を高める取り組みも進めています。',
+      '今回の売上突破を一過性の結果とせず、今後も継続的な商品開発、販売データの分析、業務効率化を進めてまいります。お客様に選ばれる越境EC事業者として、品質とスピードの両面を高め、より信頼される販売体制を目指します。'
+    ]
+  },
+  {
+    slug: 'office-relocation-2026',
+    date: '2026.05.11',
+    title: '事業規模拡大に伴い拠点を移転しました',
+    summary: '取扱商品の増加と業務量の拡大に対応するため、事業拠点を大阪市東淀川区へ移転しました。',
+    image: '/assets/news-relocation.png',
+    body: [
+      `${site.name}は、事業規模の拡大に伴い、2026年5月11日付で事業拠点を大阪市東淀川区へ移転しました。新拠点では、商品確認、保管、梱包、発送準備までの作業導線を見直し、日々の出荷業務をより安定して行える環境づくりを進めています。`,
+      '越境ECにおいては、商品そのものの魅力だけでなく、発送までの正確さ、梱包の丁寧さ、問い合わせへの対応品質が企業の信頼につながります。今回の移転は、取扱商品の増加に対応するだけでなく、社内オペレーションをより高い水準へ引き上げるための重要な取り組みです。',
+      '新しい環境を活用し、今後は商品カテゴリーの拡充、検品体制の強化、採用活動の推進を進めてまいります。地域に根ざしながらも世界市場を見据え、日本の商品価値を海外へ届ける事業者として、さらなる成長を目指します。'
+    ]
+  },
+  {
+    slug: 'sales-1000k-2026',
+    date: '2026.05.31',
+    title: '月間売上100万円を突破しました',
+    summary: '販売体制の強化、商品ラインアップの拡充、出荷品質の改善により、月間売上が100万円を突破しました。',
+    image: '/assets/news-sales-1m.png',
+    body: [
+      `${site.name}は、2026年5月の月間売上が100万円を突破したことをお知らせいたします。越境貿易事業の開始以来、海外のお客様に向けて日本国内の正規品を安定的に届ける体制づくりに取り組み、販売面と運営面の双方で着実な成長を重ねてまいりました。`,
+      '今回の成果は、商品ラインアップの拡充、販売ページの改善、在庫管理の精度向上、発送前確認の徹底など、日々の積み重ねによるものです。特に、海外需要の高いホビー用品、玩具、プラモデル、CD・Blu-ray、雑貨分野において、商品特性に合わせた情報提供と丁寧な出荷対応を行ってきました。',
+      '今後も売上規模の拡大だけを目的とするのではなく、取引の品質、顧客満足度、業務の再現性を重視した成長を続けてまいります。日本品質を必要とする世界のお客様へ、信頼できる商品と安心できる取引体験を提供できるよう、より強い運営基盤を築いてまいります。'
+    ]
+  }
+];
+
 const pages = {
   '/business/': {
     title: '越境EC事業',
@@ -548,22 +599,42 @@ ${['Amazon', '日本郵政', 'FedEx', 'Orange Connex', '卸売サイト', '国�
 }
 
 function companyPage() {
-  return `${pageHero('会社ニュース', '事業に関するお知らせ、採用情報、サイト更新情報を掲載しています。')}
-<section class="section"><div class="wrap news-list">
-${[
-  '取扱商品ページにeBay商品リンクと商品画像を追加しました。',
-  '越境EC事業の紹介ページを更新しました。',
-  '採用情報ページを公開しました。',
-  '公式ウェブサイトを公開しました。'
-].map((title, index) => `<article><time>2026.05.${25 - index}</time><a href="/company/">${title}</a></article>`).join('')}
+  return `${pageHero('会社ニュース', '越境貿易事業の歩み、成長に関するお知らせを掲載しています。')}
+<section class="section"><div class="wrap news-card-list">
+${newsArticles.map(newsCard).join('')}
 </div></section>`;
 }
 
 function newsPage() {
   return `${pageHero('お知らせ', '最新のお知らせを掲載しています。')}
-<section class="section"><div class="wrap news-list">
-${['採用情報ページを公開しました。', '越境EC事業の紹介ページを更新しました。', '公式ウェブサイトを準備中です。'].map((title, index) => `<article><time>2026.05.${25 - index}</time><a href="/news/">${title}</a></article>`).join('')}
+<section class="section"><div class="wrap news-card-list">
+${newsArticles.map(newsCard).join('')}
 </div></section>`;
+}
+
+function newsCard(article) {
+  return `<article class="news-card">
+    <a href="/company/${article.slug}/">
+      <span class="news-thumb" style="background-image:url('${article.image}')"></span>
+      <span class="news-card-body">
+        <time>${article.date}</time>
+        <strong>${article.title}</strong>
+        <small>${article.summary}</small>
+      </span>
+    </a>
+  </article>`;
+}
+
+function companyNewsDetailPage(article) {
+  return `${pageHero(article.title, article.summary)}
+<article class="section"><div class="wrap news-detail">
+  <p class="article-date">${article.date}</p>
+  <img class="news-article-image" src="${article.image}" alt="${article.title}">
+  <div class="article-body">
+    ${article.body.map(paragraph => `<p>${paragraph}</p>`).join('')}
+  </div>
+  <a class="button ghost dark" href="/company/">会社ニュース一覧へ戻る</a>
+</div></article>`;
 }
 
 function contactPage() {
@@ -670,6 +741,17 @@ export function renderPath(pathname) {
     }
   }
 
+  const newsMatch = path.match(/^\/company\/([^/]+)\/$/);
+  if (newsMatch) {
+    const article = newsArticles.find(item => item.slug === newsMatch[1]);
+    if (article) {
+      return {
+        status: 200,
+        html: pageShell({ title: article.title, description: article.summary, path: '/company/', children: companyNewsDetailPage(article) })
+      };
+    }
+  }
+
   const page = pages[path];
   if (page) {
     return {
@@ -687,6 +769,7 @@ export function renderPath(pathname) {
 export const staticPaths = [
   '/',
   ...Object.keys(pages),
+  ...newsArticles.map(article => `/company/${article.slug}/`),
   ...jobs.map(job => `/recruit/${job.slug}/`)
 ];
 
