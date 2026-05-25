@@ -11,9 +11,9 @@
   </defs>
   <rect x="10" y="10" width="108" height="108" rx="22" fill="url(#seal)"/>
   <path d="M22 32c16-12 64-13 84 2" fill="none" stroke="url(#shine)" stroke-width="10" stroke-linecap="round"/>
-  <path d="M36 39h56" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
-  <path d="M64 29v66" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
-  <path d="M42 66h44" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <text x="64" y="70" text-anchor="middle"
+        font-family="'Yu Mincho', 'YuMincho', 'Hiragino Mincho ProN', serif"
+        font-size="40" font-weight="700" letter-spacing="-3" fill="#fff">千尋</text>
   <path d="M31 91c20-12 45-13 66-2" fill="none" stroke="#f3c776" stroke-width="7" stroke-linecap="round"/>
   <circle cx="99" cy="89" r="5" fill="#f3c776"/>
 </svg>
