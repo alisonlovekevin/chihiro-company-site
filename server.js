@@ -16,7 +16,7 @@ const site = {
   phone: '090-3732-0219',
   email: 'chihiroboueki@gmail.com',
   address: '〒533-0022 大阪府大阪市東淀川区菅原1丁目15番15号 コーラル菅原202号室',
-  shopUrl: 'https://www.ebay.com/'
+  shopUrl: 'https://www.ebay.com/str/japanhorizon'
 };
 
 const nav = [
@@ -36,12 +36,15 @@ const productCategories = [
     description: 'フィギュア、キャラクターグッズ、コレクター向け商品を中心に取り扱います。',
     image: '/assets/products-hobby.png',
     products: [
-      ['アニメフィギュア', '人気作品のフィギュア、限定品、コレクター向けアイテム。'],
-      ['キャラクターグッズ', 'アクリルスタンド、缶バッジ、ぬいぐるみなど。'],
-      ['コレクターズアイテム', '保存状態を確認した海外需要の高い商品。'],
-      ['ホビー雑貨', '日本市場で人気の小物、展示用品、関連アクセサリー。'],
-      ['ディスプレイ用品', 'コレクションを美しく保管・展示する関連商品。'],
-      ['キーホルダー・小物', 'ギフト需要にも合う軽量で扱いやすいホビー商品。']
+      { title: 'eBay Item 406922744667', url: 'https://www.ebay.com/itm/406922744667' },
+      { title: 'Takara Tomy BEYBLADE X BX-46 Battle Entry Set', url: 'https://www.ebay.com/itm/406565290722', image: '/assets/ebay/hobby-406565290722.jpg' },
+      { title: 'eBay Item 406532549986', url: 'https://www.ebay.com/itm/406532549986' },
+      { title: 'eBay Item 406884972440', url: 'https://www.ebay.com/itm/406884972440' },
+      { title: 'eBay Item 406368559877', url: 'https://www.ebay.com/itm/406368559877' },
+      { title: 'eBay Item 406807073136', url: 'https://www.ebay.com/itm/406807073136' },
+      { title: 'eBay Item 406385967906', url: 'https://www.ebay.com/itm/406385967906' },
+      { title: 'eBay Item 406861821473', url: 'https://www.ebay.com/itm/406861821473' },
+      { title: 'Tamiya Mazda 787B 1/10 RC Racing Car Kit', url: 'https://www.ebay.com/itm/406458767235', image: '/assets/ebay/hobby-406458767235.jpg' }
     ]
   },
   {
@@ -49,12 +52,15 @@ const productCategories = [
     description: '日本国内の正規流通品を中心に、検品後に出荷します。',
     image: '/assets/products-toys.png',
     products: [
-      ['プラモデル', '組立キット、限定モデル、関連ツール。'],
-      ['模型用品', '塗装用品、工具、ディスプレイ関連商品。'],
-      ['トレーディング玩具', 'BOX商品、ランダム商品、シリーズ商品。'],
-      ['ボードゲーム・玩具', '日本語版・限定版など海外需要のある商品。'],
-      ['ミニチュア模型', '精巧な小型模型やコレクション向け商品。'],
-      ['ツールセット', '制作や補修に使いやすい模型関連ツール。']
+      { title: 'eBay Item 406452190890', url: 'https://www.ebay.com/itm/406452190890' },
+      { title: 'eBay Item 406508088538', url: 'https://www.ebay.com/itm/406508088538' },
+      { title: 'eBay Item 406870073892', url: 'https://www.ebay.com/itm/406870073892' },
+      { title: 'eBay Item 406878198062', url: 'https://www.ebay.com/itm/406878198062' },
+      { title: 'eBay Item 406867208689', url: 'https://www.ebay.com/itm/406867208689' },
+      { title: 'eBay Item 406508363571', url: 'https://www.ebay.com/itm/406508363571' },
+      { title: 'eBay Item 406880136949', url: 'https://www.ebay.com/itm/406880136949' },
+      { title: 'eBay Item 406374641402', url: 'https://www.ebay.com/itm/406374641402' },
+      { title: 'eBay Item 406383361470', url: 'https://www.ebay.com/itm/406383361470' }
     ]
   },
   {
@@ -62,25 +68,31 @@ const productCategories = [
     description: 'アニメ、音楽、映像作品など、海外需要のある商品を扱います。',
     image: '/assets/products-media.png',
     products: [
-      ['アニメBlu-ray', '限定版、特典付き商品、人気作品の映像商品。'],
-      ['音楽CD', '日本アーティスト、サウンドトラック、限定盤。'],
-      ['ライブ映像', 'コンサートBlu-ray、DVD、限定パッケージ。'],
-      ['メディア特典商品', '店舗特典、初回特典、関連グッズ付き商品。'],
-      ['BOXセット', 'コレクション性の高いセット商品や限定仕様。'],
-      ['関連グッズ付き商品', 'ディスクと特典を組み合わせた海外向け商品。']
+      { title: 'samurai champloo music record CD', url: 'https://www.ebay.com/itm/406435991011', image: '/assets/ebay/media-406435991011.jpg' },
+      { title: 'eBay Item 406697044041', url: 'https://www.ebay.com/itm/406697044041' },
+      { title: 'eBay Item 406412203580', url: 'https://www.ebay.com/itm/406412203580' },
+      { title: 'eBay Item 406766875175', url: 'https://www.ebay.com/itm/406766875175' },
+      { title: 'eBay Item 406418374135', url: 'https://www.ebay.com/itm/406418374135' },
+      { title: 'eBay Item 406359783638', url: 'https://www.ebay.com/itm/406359783638' },
+      { title: 'eBay Item 406359782535', url: 'https://www.ebay.com/itm/406359782535' },
+      { title: 'eBay Item 406769458968', url: 'https://www.ebay.com/itm/406769458968' },
+      { title: 'Rolling Quartz Echo Kiseki No Hibiki CD+DVD', url: 'https://www.ebay.com/itm/406418542896', image: '/assets/ebay/media-406418542896.jpg' }
     ]
   },
   {
-    name: '日用品・雑貨',
-    description: '日本品質を求める海外顧客に向けた生活関連商品を展開します。',
+    name: '工具類・雑貨',
+    description: '工具、生活雑貨、ケア用品など、日本品質を求める海外顧客に向けた商品を展開します。',
     image: '/assets/products-goods.png',
     products: [
-      ['生活雑貨', '使いやすさと品質に優れた日本製・日本企画商品。'],
-      ['文具', '筆記具、ノート、デスク用品、限定デザイン商品。'],
-      ['キッチン用品', '便利で品質の高い調理・保存関連商品。'],
-      ['美容・ケア用品', '日常ケア用品、小型雑貨、ギフト向け商品。'],
-      ['収納用品', '暮らしを整えるコンパクトで実用的な商品。'],
-      ['ギフト雑貨', '海外のお客様にも選ばれやすい日本らしい小物。']
+      { title: 'eBay Item 406556447727', url: 'https://www.ebay.com/itm/406556447727' },
+      { title: 'eBay Item 406556294594', url: 'https://www.ebay.com/itm/406556294594' },
+      { title: 'eBay Item 406558107469', url: 'https://www.ebay.com/itm/406558107469' },
+      { title: 'eBay Item 406592197365', url: 'https://www.ebay.com/itm/406592197365' },
+      { title: 'eBay Item 406650448786', url: 'https://www.ebay.com/itm/406650448786' },
+      { title: 'eBay Item 406653582083', url: 'https://www.ebay.com/itm/406653582083' },
+      { title: 'eBay Item 406716519348', url: 'https://www.ebay.com/itm/406716519348' },
+      { title: 'eBay Item 406763562243', url: 'https://www.ebay.com/itm/406763562243' },
+      { title: 'eBay Item 406807296430', url: 'https://www.ebay.com/itm/406807296430' }
     ]
   }
 ];
@@ -196,7 +208,7 @@ function pageShell({ title, description, path, children }) {
 <title>${escapeHtml(fullTitle)}</title>
 <meta name="keywords" content="越境EC,日本正規品,厳選仕入れ,品質管理,検品,国際物流,海外発送,採用情報">
 <meta name="description" content="${escapeHtml(description)}">
-<link rel="stylesheet" href="/style.css?v=4">
+<link rel="stylesheet" href="/style.css?v=5">
 </head>
 <body>
 ${header(path)}
@@ -355,13 +367,13 @@ ${productCategories.map(category => `<section class="product-category">
     <a class="button shop-button" href="${site.shopUrl}" target="_blank" rel="noopener">訪問網店</a>
   </div>
   <div class="product-shelf">
-    ${category.products.map(([name, text], index) => `<article class="product-card">
-      <a href="${site.shopUrl}" target="_blank" rel="noopener">
-        <span class="product-image tile-${index + 1}" style="background-image:url('${category.image}')"></span>
+    ${category.products.map((product, index) => `<article class="product-card">
+      <a href="${product.url}" target="_blank" rel="noopener">
+        <span class="product-image ${product.image ? 'real-image' : `tile-${(index % 6) + 1}`}" style="background-image:url('${product.image || category.image}')"></span>
         <span class="product-type">${category.name}</span>
-        <h3>${name}</h3>
-        <p>${text}</p>
-        <small>eBayで見る</small>
+        <h3>${product.title}</h3>
+        <p>DDU · Buyer Pays Duties</p>
+        <small>eBay商品を見る</small>
       </a>
     </article>`).join('')}
   </div>

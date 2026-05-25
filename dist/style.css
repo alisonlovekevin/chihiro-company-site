@@ -441,6 +441,11 @@ p {
   background-position: 100% 100%;
 }
 
+.product-image.real-image {
+  background-position: center;
+  background-size: contain;
+}
+
 .product-type {
   margin: 18px 20px 0;
   color: var(--green);
