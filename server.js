@@ -32,67 +32,211 @@ const nav = [
 
 const productCategories = [
   {
-    name: 'ホビー用品',
-    description: 'フィギュア、キャラクターグッズ、コレクター向け商品を中心に取り扱います。',
-    image: '/assets/products-hobby.png',
-    products: [
-      { title: 'Sony REON POCKET Wearable Thermal Device', url: 'https://www.ebay.com/itm/406922744667', image: '/assets/ebay/hobby-406922744667.avif' },
-      { title: 'Takara Tomy BEYBLADE X BX-46 Battle Entry Set', url: 'https://www.ebay.com/itm/406565290722', image: '/assets/ebay/hobby-406565290722.jpg' },
-      { title: 'eBay Item 406532549986', url: 'https://www.ebay.com/itm/406532549986' },
-      { title: 'eBay Item 406884972440', url: 'https://www.ebay.com/itm/406884972440' },
-      { title: 'eBay Item 406368559877', url: 'https://www.ebay.com/itm/406368559877' },
-      { title: 'eBay Item 406807073136', url: 'https://www.ebay.com/itm/406807073136' },
-      { title: 'eBay Item 406385967906', url: 'https://www.ebay.com/itm/406385967906' },
-      { title: 'eBay Item 406861821473', url: 'https://www.ebay.com/itm/406861821473' },
-      { title: 'Tamiya Mazda 787B 1/10 RC Racing Car Kit', url: 'https://www.ebay.com/itm/406458767235', image: '/assets/ebay/hobby-406458767235.jpg' }
+    "name": "?????",
+    "description": "????????????????????????????????????",
+    "image": "/assets/products-hobby.png",
+    "products": [
+      {
+        "title": "Sony REON POCKET PRO Wearable Thermo Device Japan Edition Ships From Japan",
+        "url": "https://www.ebay.com/itm/406922744667",
+        "image": "/assets/ebay/hobby-406922744667.jpg"
+      },
+      {
+        "title": "Takara Tomy BEYBLADE X BX-46 Battle Entry Set Infinity Stadium 2 Beys Japan",
+        "url": "https://www.ebay.com/itm/406565290722",
+        "image": "/assets/ebay/hobby-406565290722.jpg"
+      },
+      {
+        "title": "Tamiya 58630 Plasma Edge II TT-02B 1/10 4WD Off-Road RC Buggy Kit Japan NEW",
+        "url": "https://www.ebay.com/itm/406532549986",
+        "image": "/assets/ebay/hobby-406532549986.jpg"
+      },
+      {
+        "title": "Pre-Order Tomica Premium Unlimited Star Wars Razor Crest Ship by May 30",
+        "url": "https://www.ebay.com/itm/406884972440",
+        "image": "/assets/ebay/hobby-406884972440.jpg"
+      },
+      {
+        "title": "Tamiya 1/24 Alfa Romeo Giulia Sprint GTA Model Kit 24188 Ships From JP",
+        "url": "https://www.ebay.com/itm/406368559877",
+        "image": "/assets/ebay/hobby-406368559877.jpg"
+      },
+      {
+        "title": "Daiwa 14 Underspin 80 Closed Face Spincast Reel 6lb-95m",
+        "url": "https://www.ebay.com/itm/406807073136",
+        "image": "/assets/ebay/hobby-406807073136.jpg"
+      },
+      {
+        "title": "Panasonic RP-HZ47 Clip-On Open Type Stereo Headphones 30mm, 20Ω, 1m Cord JP",
+        "url": "https://www.ebay.com/itm/406385967906",
+        "image": "/assets/ebay/hobby-406385967906.jpg"
+      },
+      {
+        "title": "Gillette Labs Heated Laser Shaving Razor 3 Piece Assortment Black From Japan NEW",
+        "url": "https://www.ebay.com/itm/406861821473",
+        "image": "/assets/ebay/hobby-406861821473.jpg"
+      },
+      {
+        "title": "Tamiya Mazda 787B 1/10 RC Racing Car Kit 47518 Japan Special Edition NEW",
+        "url": "https://www.ebay.com/itm/406458767235",
+        "image": "/assets/ebay/hobby-406458767235.jpg"
+      }
     ]
   },
   {
-    name: '玩具・プラモデル',
-    description: '日本国内の正規流通品を中心に、検品後に出荷します。',
-    image: '/assets/products-toys.png',
-    products: [
-      { title: 'eBay Item 406452190890', url: 'https://www.ebay.com/itm/406452190890' },
-      { title: 'eBay Item 406508088538', url: 'https://www.ebay.com/itm/406508088538' },
-      { title: 'eBay Item 406870073892', url: 'https://www.ebay.com/itm/406870073892' },
-      { title: 'eBay Item 406878198062', url: 'https://www.ebay.com/itm/406878198062' },
-      { title: 'eBay Item 406867208689', url: 'https://www.ebay.com/itm/406867208689' },
-      { title: 'eBay Item 406508363571', url: 'https://www.ebay.com/itm/406508363571' },
-      { title: 'eBay Item 406880136949', url: 'https://www.ebay.com/itm/406880136949' },
-      { title: 'eBay Item 406374641402', url: 'https://www.ebay.com/itm/406374641402' },
-      { title: 'eBay Item 406383361470', url: 'https://www.ebay.com/itm/406383361470' }
+    "name": "????????",
+    "description": "?????????????????????????",
+    "image": "/assets/products-toys.png",
+    "products": [
+      {
+        "title": "Bandai Ultraman Kaiser Belial Ultra Action Figure 2025 Japan Ships From Japan",
+        "url": "https://www.ebay.com/itm/406452190890",
+        "image": "/assets/ebay/toys-406452190890.jpg"
+      },
+      {
+        "title": "Licca Chan Econeco Yukata Sumer Kimono Doll LD-14 Takara Tomy Japan 2025",
+        "url": "https://www.ebay.com/itm/406508088538",
+        "image": "/assets/ebay/toys-406508088538.jpg"
+      },
+      {
+        "title": "Licca-chan My Melody Lovely Doll LD-28 Sanrio Collab Takara Tomy Japan Limited",
+        "url": "https://www.ebay.com/itm/406870073892",
+        "image": "/assets/ebay/toys-406870073892.jpg"
+      },
+      {
+        "title": "TOY STORY 30th Anniv. Real Size Talking Figure Buzz Lightyear NINJA ver.",
+        "url": "https://www.ebay.com/itm/406878198062",
+        "image": "/assets/ebay/toys-406878198062.jpg"
+      },
+      {
+        "title": "TAKARA TOMY Licca-chan Doll LD-29 Neo Decola Licca-chan Fashion Doll",
+        "url": "https://www.ebay.com/itm/406867208689",
+        "image": "/assets/ebay/toys-406867208689.jpg"
+      },
+      {
+        "title": "Licca Chan Kimono Doll LD-30 Red Takara Tomy Japan 2024 2025 Ships From Japan",
+        "url": "https://www.ebay.com/itm/406508363571",
+        "image": "/assets/ebay/toys-406508363571.jpg"
+      },
+      {
+        "title": "Takara Tomy Plarail SGX E5 Hayabusa E7 Kagayaki Combination Set",
+        "url": "https://www.ebay.com/itm/406880136949",
+        "image": "/assets/ebay/toys-406880136949.jpg"
+      },
+      {
+        "title": "Pre-order Sekiguchi 244430 Liko-chan x Chimutan Small Watame-chan Plush JP",
+        "url": "https://www.ebay.com/itm/406374641402",
+        "image": "/assets/ebay/toys-406374641402.jpg"
+      },
+      {
+        "title": "Bandai Spirits 30 MINUTES FANTASY Dragonia Knight Model Kit JP Ships",
+        "url": "https://www.ebay.com/itm/406383361470",
+        "image": "/assets/ebay/toys-406383361470.jpg"
+      }
     ]
   },
   {
-    name: 'CD・Blu-ray',
-    description: 'アニメ、音楽、映像作品など、海外需要のある商品を扱います。',
-    image: '/assets/products-media.png',
-    products: [
-      { title: 'samurai champloo music record CD', url: 'https://www.ebay.com/itm/406435991011', image: '/assets/ebay/media-406435991011.jpg' },
-      { title: 'eBay Item 406697044041', url: 'https://www.ebay.com/itm/406697044041' },
-      { title: 'eBay Item 406412203580', url: 'https://www.ebay.com/itm/406412203580' },
-      { title: 'eBay Item 406766875175', url: 'https://www.ebay.com/itm/406766875175' },
-      { title: 'eBay Item 406418374135', url: 'https://www.ebay.com/itm/406418374135' },
-      { title: 'eBay Item 406359783638', url: 'https://www.ebay.com/itm/406359783638' },
-      { title: 'eBay Item 406359782535', url: 'https://www.ebay.com/itm/406359782535' },
-      { title: 'eBay Item 406769458968', url: 'https://www.ebay.com/itm/406769458968' },
-      { title: 'Rolling Quartz Echo Kiseki No Hibiki CD+DVD', url: 'https://www.ebay.com/itm/406418542896', image: '/assets/ebay/media-406418542896.jpg' }
+    "name": "CD?Blu-ray",
+    "description": "?????????????????????????????",
+    "image": "/assets/products-media.png",
+    "products": [
+      {
+        "title": "samurai champloo music record CD Factory Sealed Genuine Product Ships from Japan",
+        "url": "https://www.ebay.com/itm/406435991011",
+        "image": "/assets/ebay/media-406435991011.jpg"
+      },
+      {
+        "title": "Taylor Swift Midnights Late Night Edition Japan CD 7\" Sleeve Eras Tour w/Pick",
+        "url": "https://www.ebay.com/itm/406697044041",
+        "image": "/assets/ebay/media-406697044041.jpg"
+      },
+      {
+        "title": "Kanye West \"Graduation\" + 2 bonus tracks JAPAN Limited Edition CD NEW",
+        "url": "https://www.ebay.com/itm/406412203580",
+        "image": "/assets/ebay/media-406412203580.jpg"
+      },
+      {
+        "title": "New LAUFEY BEWITCHED THE GODDESS EDITION W/ BONUS TRACKS 2024 JAPAN BLU-SPEC CD",
+        "url": "https://www.ebay.com/itm/406766875175",
+        "image": "/assets/ebay/media-406766875175.jpg"
+      },
+      {
+        "title": "Queens Of The Stone Age Alive in the Catacombs CD Japan Edition Ships From Japan",
+        "url": "https://www.ebay.com/itm/406418374135",
+        "image": "/assets/ebay/media-406418374135.jpg"
+      },
+      {
+        "title": "Kensuke Ueo CHAINSAW MAN REZE ARC Soundtrack CD Japan Edition Ships From Japan",
+        "url": "https://www.ebay.com/itm/406359783638",
+        "image": "/assets/ebay/media-406359783638.jpg"
+      },
+      {
+        "title": "IRIS OUT Edition CD Kenshi Yonezu Utada Hikaru Reze Acrylic Stand Polaroid Japan",
+        "url": "https://www.ebay.com/itm/406359782535",
+        "image": "/assets/ebay/media-406359782535.jpg"
+      },
+      {
+        "title": "Tailgunner Guns For Hire Japan CD GQCS-91343 Heavy Metal Album",
+        "url": "https://www.ebay.com/itm/406769458968",
+        "image": "/assets/ebay/media-406769458968.jpg"
+      },
+      {
+        "title": "Rolling Quartz Quartz Echo Kiseki No Hibiki Limited Edition CD+DVD Limited New",
+        "url": "https://www.ebay.com/itm/406418542896",
+        "image": "/assets/ebay/media-406418542896.jpg"
+      }
     ]
   },
   {
-    name: '工具類・雑貨',
-    description: '工具、生活雑貨、ケア用品など、日本品質を求める海外顧客に向けた商品を展開します。',
-    image: '/assets/products-goods.png',
-    products: [
-      { title: 'eBay Item 406556447727', url: 'https://www.ebay.com/itm/406556447727' },
-      { title: 'eBay Item 406556294594', url: 'https://www.ebay.com/itm/406556294594' },
-      { title: 'eBay Item 406558107469', url: 'https://www.ebay.com/itm/406558107469' },
-      { title: 'eBay Item 406592197365', url: 'https://www.ebay.com/itm/406592197365' },
-      { title: 'eBay Item 406650448786', url: 'https://www.ebay.com/itm/406650448786' },
-      { title: 'eBay Item 406653582083', url: 'https://www.ebay.com/itm/406653582083' },
-      { title: 'eBay Item 406716519348', url: 'https://www.ebay.com/itm/406716519348' },
-      { title: 'eBay Item 406763562243', url: 'https://www.ebay.com/itm/406763562243' },
-      { title: 'eBay Item 406807296430', url: 'https://www.ebay.com/itm/406807296430' }
+    "name": "??????",
+    "description": "????????????????????????????????????????",
+    "image": "/assets/products-goods.png",
+    "products": [
+      {
+        "title": "Takagi Shark Saw Pruning Curve Saw 270mm, Fluorine Coat, Replaceable Blade JP",
+        "url": "https://www.ebay.com/itm/406556447727",
+        "image": "/assets/ebay/goods-406556447727.jpg"
+      },
+      {
+        "title": "KAKURI Kakuri Sangyo 130mm Folding Keyhole Saw 4954, Replaceable Blade, Japan",
+        "url": "https://www.ebay.com/itm/406556294594",
+        "image": "/assets/ebay/goods-406556294594.jpg"
+      },
+      {
+        "title": "KAKURI MULTICRAFT MSS-30 Powerful All-Purpose Shears, Heavy-Duty Pro Scissors",
+        "url": "https://www.ebay.com/itm/406558107469",
+        "image": "/assets/ebay/goods-406558107469.jpg"
+      },
+      {
+        "title": "Midori Magnetic Box Cutter with Ceramic Blade + Spare, Safe Cardboard Opener",
+        "url": "https://www.ebay.com/itm/406592197365",
+        "image": "/assets/ebay/goods-406592197365.jpg"
+      },
+      {
+        "title": "OLFA Hyper L-Shape Gray Screw Lock Special Black Blade 192B-GRY Made in Japan",
+        "url": "https://www.ebay.com/itm/406650448786",
+        "image": "/assets/ebay/goods-406650448786.jpg"
+      },
+      {
+        "title": "OLFA 192B Hyper L-Type 18mm Screw Lock Utility Knife, Rubber Grip, Japan",
+        "url": "https://www.ebay.com/itm/406653582083",
+        "image": "/assets/ebay/goods-406653582083.jpg"
+      },
+      {
+        "title": "ENGINEER PZ-57 Neji-Saurus M2 ESD Screw Removal Pliers 2-3.5mm Made in Japan",
+        "url": "https://www.ebay.com/itm/406716519348",
+        "image": "/assets/ebay/goods-406716519348.jpg"
+      },
+      {
+        "title": "KAI Compact Curved Kitchen Scissors DH3347 Seki Magoroku with Cap Made in Japan",
+        "url": "https://www.ebay.com/itm/406763562243",
+        "image": "/assets/ebay/goods-406763562243.jpg"
+      },
+      {
+        "title": "25 in 1 Magnetic Precision Screwdriver Set Torx Y Pentalobe by HEARTHFUN",
+        "url": "https://www.ebay.com/itm/406807296430",
+        "image": "/assets/ebay/goods-406807296430.jpg"
+      }
     ]
   }
 ];
