@@ -136,7 +136,7 @@ const productCategories = [
     ]
   },
   {
-    "name": "CD?Blu-ray",
+    "name": "CD・Blu-ray",
     "description": "アニメ、音楽、映像作品など、海外需要のある商品を扱います。",
     "image": "/assets/products-media.png",
     "products": [
@@ -288,7 +288,7 @@ const pages = {
   },
   '/products/': {
     title: '取扱商品',
-    description: 'ホビー用品、玩具、プラモデル、CD、Blu-ray、日用品など、海外需要のある日本商品を取り扱います。',
+    description: 'ホビー用品、玩具、プラモデル、CD・Blu-ray、日用品など、海外需要のある日本商品を取り扱います。',
     body: productsPage
   },
   '/quality/': {
