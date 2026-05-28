@@ -21,7 +21,6 @@ const site = {
 
 const nav = [
   ['/', 'ホーム'],
-  ['https://www.chihirotrade.com/', 'ソフトウェア事業'],
   ['/business/', '事業内容'],
   ['/products/', '取扱商品'],
   ['/quality/', '品質管理'],
@@ -437,7 +436,7 @@ function header(path) {
   <div class="topbar">
     <div class="wrap topbar-inner">
       <span>${site.name}のウェブサイトをご覧いただき、ありがとうございます。</span>
-      <span><a href="/company/">会社ニュース</a><a href="/contact/">お問い合わせ</a></span>
+      <span><a href="/company/">会社ニュース</a><a href="/contact/">お問い合わせ</a><a href="https://www.chihirotrade.com/">ソフトウェア事業</a></span>
     </div>
   </div>
   <div class="wrap brand-row">
