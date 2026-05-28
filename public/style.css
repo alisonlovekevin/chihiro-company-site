@@ -127,33 +127,56 @@ img {
 
 .nav {
   border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  background: rgba(255,255,255,.96);
+  border-bottom: 1px solid rgba(16, 24, 33, .08);
+  background: #fff;
   position: sticky;
   top: 0;
   z-index: 10;
+  box-shadow: 0 16px 34px rgba(16, 24, 33, .04);
 }
 
 .nav-inner {
   display: flex;
   align-items: center;
-  gap: 2px;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
   overflow-x: auto;
 }
 
 .nav a {
+  position: relative;
   display: block;
-  padding: 15px 18px;
-  color: #303941;
+  padding: 18px 17px;
+  color: #3d4854;
+  font-size: 15px;
   font-weight: 700;
   white-space: nowrap;
-  border-bottom: 3px solid transparent;
+  border-bottom: 0;
+  transition: color .2s ease;
 }
 
 .nav a.active,
 .nav a:hover {
   color: var(--red-dark);
-  border-bottom-color: var(--red);
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 0;
+  height: 3px;
+  background: var(--red);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .2s ease;
+}
+
+.nav a.active::after,
+.nav a:hover::after {
+  transform: scaleX(1);
 }
 
 .hero {
