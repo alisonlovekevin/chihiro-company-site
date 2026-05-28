@@ -436,7 +436,7 @@ function header(path) {
   <div class="topbar">
     <div class="wrap topbar-inner">
       <span>${site.name}のウェブサイトをご覧いただき、ありがとうございます。</span>
-      <span><a href="/company/">会社ニュース</a><a href="/contact/">お問い合わせ</a><a href="https://www.chihirotrade.com/">ソフトウェア事業</a></span>
+      <span><a href="/company/">会社ニュース</a><a href="/contact/">お問い合わせ</a><a href="https://www.chihirotrade.com/">IT事業</a></span>
     </div>
   </div>
   <div class="wrap brand-row">
