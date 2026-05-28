@@ -21,7 +21,7 @@ const site = {
 
 const nav = [
   ['/', 'ホーム'],
-  ['https://chihiroboueki.com/', 'IT事業'],
+  ['https://www.chihirotrade.com/', 'ソフトウェア事業'],
   ['/business/', '事業内容'],
   ['/products/', '取扱商品'],
   ['/quality/', '品質管理'],
