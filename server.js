@@ -537,6 +537,27 @@ function homePage() {
     </div>
   </div>
 </section>
+<section class="section home-product-showcase">
+  <div class="wrap">
+    <div class="section-head showcase-head">
+      <div>
+        <p class="eyebrow">Selected Products</p>
+        <h2>おすすめ商品</h2>
+        <p>海外のお客様から注目を集める日本商品を、カテゴリーごとにご紹介します。</p>
+      </div>
+      <a class="button shop-button" href="/products/">取扱商品一覧を見る</a>
+    </div>
+    ${productCategories.map(category => `<section class="home-product-category">
+      <div class="home-category-head">
+        <h3>${category.name}</h3>
+        <a href="/products/">カテゴリーを見る</a>
+      </div>
+      <div class="home-product-grid">
+        ${category.products.slice(0, 3).map(product => homeProductCard(category, product)).join('')}
+      </div>
+    </section>`).join('')}
+  </div>
+</section>
 <section class="section">
   <div class="wrap split">
     <div>
@@ -557,6 +578,18 @@ function featureCard(title, text, href) {
     <h3>${title}</h3>
     <p>${text}</p>
     <a href="${href}">詳しく見る</a>
+  </article>`;
+}
+
+function homeProductCard(category, product) {
+  return `<article class="home-product-card">
+    <a href="${product.url}" target="_blank" rel="noopener">
+      <span class="home-product-image" style="background-image:url('${product.image || category.image}')"></span>
+      <span class="home-product-body">
+        <small>${category.name}</small>
+        <strong>${product.title}</strong>
+      </span>
+    </a>
   </article>`;
 }
 

@@ -504,6 +504,102 @@ p {
   font-size: 14px;
 }
 
+.home-product-showcase {
+  background: #fff;
+}
+
+.showcase-head {
+  max-width: none;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.home-product-category {
+  padding: 26px 0 34px;
+  border-top: 1px solid var(--line);
+}
+
+.home-category-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.home-category-head h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.home-category-head a {
+  color: var(--red-dark);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.home-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.home-product-card {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.home-product-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(169, 50, 50, .28);
+  box-shadow: var(--shadow);
+}
+
+.home-product-card a {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  min-height: 132px;
+}
+
+.home-product-image {
+  display: block;
+  min-height: 132px;
+  background-color: #f4f4f2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-right: 1px solid var(--line);
+}
+
+.home-product-body {
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 16px;
+}
+
+.home-product-body small {
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.home-product-body strong {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
 .page-hero {
   padding: 82px 0;
   color: #fff;
@@ -860,6 +956,14 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .showcase-head {
+    display: grid;
+  }
+
+  .home-product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .news-card a {
     min-height: 0;
   }
@@ -914,6 +1018,10 @@ p {
   .process,
   .job-meta,
   .company-table div {
+    grid-template-columns: 1fr;
+  }
+
+  .home-product-grid {
     grid-template-columns: 1fr;
   }
 
