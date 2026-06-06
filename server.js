@@ -449,7 +449,7 @@ function header(path) {
   <div class="topbar">
     <div class="wrap topbar-inner">
       <span>${site.name}のウェブサイトをご覧いただき、ありがとうございます。</span>
-      <span><a href="/company/">会社ニュース</a><a href="/contact/">お問い合わせ</a><a href="https://www.chihiroboueki.com/">IT事業</a><a href="https://erp.chihiroboueki.com/">ERP</a></span>
+      <span><a href="/company/">会社ニュース</a><a href="/contact/">お問い合わせ</a><a href="https://www.chihiroboueki.com/" target="_blank" rel="noopener">IT事業</a><a href="https://erp.chihiroboueki.com/" target="_blank" rel="noopener">ERP</a></span>
     </div>
   </div>
   <div class="wrap brand-row">
